@@ -1,0 +1,9 @@
+USE [gestaoEstufas]
+GO
+
+ALTER TABLE [dbo].[Estufa]  WITH CHECK ADD  CONSTRAINT [CHK_RUA_NOT_EMPTY] CHECK  (([rua]<>''))
+GO
+
+ALTER TABLE [dbo].[Estufa] CHECK CONSTRAINT [CHK_RUA_NOT_EMPTY]
+GO
+
